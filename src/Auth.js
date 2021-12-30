@@ -1,10 +1,9 @@
-import firebase from 'firebase/app';
-import "firebase/auth"
+import firebase from 'firebase';
+import {createUserWithEmailAndPassword} "firebase/auth"
 import {auth} from './firebase'
   
 export const register = async({email, password})=>{
-    const resp = await firebase.auth()
-      .createUserWithEmailAndPassword(email, password);
+    const resp = await createUserWithEmailAndPassword(email, password);
     return resp.user;
 }
   
