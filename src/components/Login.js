@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import './register.css';
 
 function Login({login}) {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
     return (
-    <div>
+      <div className='registerPage'>
+      <div className='registerForm'>
         <h3> Login </h3>
         <input
           placeholder="Email..."
@@ -21,7 +23,8 @@ function Login({login}) {
         />
 
         <button onClick={() => login(loginEmail, loginPassword)}> Login</button>
-        <Link to="/register"><p>Create an account</p></Link>
+        <Link className='link' to="/register"><p>Create an account</p></Link>
+    </div>
     </div>
     )
 }

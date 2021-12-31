@@ -3,16 +3,10 @@ import Parcel from './Parcel';
 import ParcelForm from './ParcelForm';
 import {db} from '../firebase-config';
 import { doc, setDoc, getDoc, addDoc } from "firebase/firestore";
-import ParcelFormDemo from './ParcelFormDemo';
 
 function ParcelList({user}) {
 
     const [todos, setTodos] = useState([]);
-    const [show, setShow] = useState(false);
-
-    const changeShow = (x) => {
-        setShow(x);
-    }
 
     useEffect(() => {
         if (user.uid)
@@ -45,7 +39,7 @@ function ParcelList({user}) {
     }
     
     return (
-        <div>
+        <div style={{display: "flex"}, {flexDirection: "col"}, {justifyContent: "center !important"}, {alignContent: "center"}, {alignItems: "center"}}>
             <h1>todo</h1>
             <ParcelForm onsubmit={addTodo}/>
             <Parcel todos={todos} />

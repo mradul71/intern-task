@@ -10,7 +10,6 @@ import { auth } from "./firebase-config";
 import Register from "./components/Register";
 import Login from "./components/Login";
 import Home from "./components/Home"
-import RegisterDemo from "./components/RegisterDemo";
 import { BrowserRouter as Router, Switch, Route, Link, Routes, Navigate } from "react-router-dom";
 
 function App() {

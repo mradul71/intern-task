@@ -1,6 +1,5 @@
 import React from 'react'
 import ParcelList from './ParcelList'
-import ParcelListDemo from './ParcelListDemo'
 
 function Home({logout, user}) {
     return (
