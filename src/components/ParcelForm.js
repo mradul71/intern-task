@@ -76,23 +76,23 @@ function ParcelForm(props) {
       >
         <Box className='modalBox' sx={style}>
           <div className='closeHead'>
-            <p>Parcel Form</p>
+            <h1 className='modalHeading'>Parcel Form</h1>
             <button className='modalCloser' onClick={() => handleClose()}><CloseIcon /></button>
           </div>
           <form className="parcelInfoForm"  onSubmit={handleSubmit}>
             <div className='labelInput'>
-              <p>Product Info</p>
+              <p className='para'>Product Info :</p>
               <textarea
               required
               placeholder='Info of Product'
               value={info}
-              rows="4"
+              rows="2"
               name='text'
               onChange={(e) => setinfo(e.target.value)}
             />
             </div>
-          <div className='labelInput'>
-            <p>cost</p>
+          <div className='labelInput mr-top'>
+            <p className='para'>Cost :</p>
             <input
               type="text"
               required
@@ -105,8 +105,8 @@ function ParcelForm(props) {
           </div>
           <div className='locations'>
             
-            <div className='labelInput'>
-            <p>Start Location</p>
+            <div className='labelInput mr-top'>
+            <p className='para'>Start Location :</p>
             <input
             type="text"
             required
@@ -118,7 +118,7 @@ function ParcelForm(props) {
             </div>
             
             <div className='labelInput'>
-            <p>End Location</p>
+            <p className='para'>End Location :</p>
             <input
             type="text"
             required
@@ -131,8 +131,8 @@ function ParcelForm(props) {
           </div>
           <div className='senderInfo'>
             
-          <div className='labelInput'>
-          <p>Sender's name</p>
+          <div className='labelInput  mr-top'>
+          <p className='para'>Sender's name :</p>
             <input
             type="text"
             required
@@ -144,7 +144,7 @@ function ParcelForm(props) {
           </div>
           
           <div className='labelInput'>
-          <p>Sender's number</p>
+          <p className='para'>Sender's number :</p>
             <input
             type="text"
             required
@@ -156,7 +156,7 @@ function ParcelForm(props) {
           </div>
 
           <div className='labelInput'>
-          <p>Sender's address</p>
+          <p className='para'>Sender's address :</p>
             <input
             type="text"
             required
@@ -168,8 +168,8 @@ function ParcelForm(props) {
           </div>
           </div>
           <div className='recieverInfo'>
-          <div className='labelInput'>
-            <p>Reciever's name</p>
+          <div className='labelInput mr-top'>
+            <p className='para'>Reciever's name :</p>
               <input
               type="text"
               required
@@ -181,7 +181,7 @@ function ParcelForm(props) {
           </div>
           
           <div className='labelInput'>
-          <p>Reciever's number</p>
+          <p className='para'>Reciever's number : </p>
             <input
             type="text"
             required
@@ -193,7 +193,7 @@ function ParcelForm(props) {
           </div>
           
           <div className='labelInput'>
-          <p>Reciever's address</p>
+          <p className='para'>Reciever's address :</p>
             <input
             type="text"
             required

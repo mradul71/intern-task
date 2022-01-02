@@ -40,7 +40,7 @@ function ParcelList({user}) {
     
     return (
         <div style={{display: "flex"}, {flexDirection: "col"}, {justifyContent: "center !important"}, {alignContent: "center"}, {alignItems: "center"}}>
-            <h1>todo</h1>
+            {/* <h1>todo</h1> */}
             <ParcelForm onsubmit={addTodo}/>
             <Parcel todos={todos} />
         </div>

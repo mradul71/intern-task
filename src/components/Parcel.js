@@ -26,10 +26,10 @@ function Parcel({todos}) {
         <TableHead>
           <TableRow>
             <TableCell />
-            <TableCell>Product Info</TableCell>
-            <TableCell align="right">Cost</TableCell>
-            <TableCell align="right">Starting Location</TableCell>
-            <TableCell align="right">Ending Location</TableCell>
+            <TableCell className="tHeading">Product Info</TableCell>
+            <TableCell className="tHeading" align="right">Cost</TableCell>
+            <TableCell className="tHeading" align="right">Starting Location</TableCell>
+            <TableCell className="tHeading" align="right">Ending Location</TableCell>
             {/* <TableCell align="right">Protein&nbsp;(g)</TableCell> */}
           </TableRow>
         </TableHead>
@@ -38,7 +38,7 @@ function Parcel({todos}) {
             <>
             <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
             <TableCell>
-              <IconButton
+              <IconButton className="arrow"
                 aria-label="expand row"
                 size="small"
                 onClick={() => {
@@ -67,16 +67,16 @@ function Parcel({todos}) {
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
               <Collapse in={(open && id==row.id)} timeout="auto" unmountOnExit>
                 <Box sx={{ margin: 1 }}>
-                  <Typography variant="h6" gutterBottom component="div">
+                  <Typography className="tHeading" variant="h6" gutterBottom component="div">
                     Contact Info
                   </Typography>
                   <Table size="small" aria-label="purchases">
                     <TableHead>
                       <TableRow>
-                        <TableCell>Reciever/Sender</TableCell>
-                        <TableCell>Name</TableCell>
-                        <TableCell align="right">Number</TableCell>
-                        <TableCell align="right">Address</TableCell>
+                        <TableCell className="tHeading small">Reciever/Sender</TableCell>
+                        <TableCell className="tHeading small">Name</TableCell>
+                        <TableCell className="tHeading small" align="right">Number</TableCell>
+                        <TableCell className="tHeading small" align="right">Address</TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>

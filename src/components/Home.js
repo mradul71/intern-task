@@ -1,13 +1,14 @@
 import React from 'react'
 import ParcelList from './ParcelList'
+import './home.css'
 
-function Home({logout, user}) {
+function Home({ logout, user }) {
     return (
-        <div>
+        <div className='bg'>
             <div>
                 <h1>Logged in</h1>
-                <ParcelList user={user}/>
-                <button onClick={() => logout()}> Sign Out </button>
+                <button className='signOutBtn' onClick={() => logout()}> Sign Out </button>
+                <ParcelList user={user} />
             </div>
         </div>
     )

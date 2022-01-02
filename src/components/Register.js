@@ -11,12 +11,14 @@ function Register({ register }) {
         
           <h3> Register User </h3>
           <input
+          type="text"
             placeholder="Enter Your Email..."
             onChange={(event) => {
               setRegisterEmail(event.target.value);
             }}
           />
           <input
+          type="password"
             placeholder="Enter Your Password..."
             onChange={(event) => {
               setRegisterPassword(event.target.value);
